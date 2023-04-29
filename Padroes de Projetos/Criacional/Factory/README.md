@@ -1,0 +1,1 @@
+O padrão Factory tem duas variações: Factory Method e Abstract Factory e a intenção desses é fornecer uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
