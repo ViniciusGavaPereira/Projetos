@@ -12,12 +12,12 @@ public class App {
 
 
         Projeto estoqueDois = new Projeto(new ArrayList<Item>());
-        estoqueDois.addItem(estoqueUm);
 
         estoqueDois.addItem(new Produto("CONTROLE", 700));
         estoqueDois.addItem(new Produto("XBOX", 3500));
         estoqueDois.addItem(new Produto("CARREGADOR", 100));    
-    
+        estoqueDois.addItem(estoqueUm);
+
         
         //Traz os itens só do estoque um, que está dentro do estoque dois:
         //System.out.println("\nTotal do projeto: " + estoqueUm.calcularPrecoFInal());
