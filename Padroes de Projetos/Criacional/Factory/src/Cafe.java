@@ -1,6 +1,5 @@
 public class Cafe implements Bebida {
 
-    private TipoBebida.EscolhaCafe cafe;
 
     @Override
     public String nome(String nome) {
@@ -14,13 +13,13 @@ public class Cafe implements Bebida {
 
         switch(escolha){
             case 1: 
-            cafeEscolhido = cafe.MOCACCINO.getNome();
+            cafeEscolhido = TipoBebida.EscolhaCafe.MOCACCINO.getNome();
             break;
             case 2: 
-            cafeEscolhido = cafe.CARIOCA.getNome();
+            cafeEscolhido = TipoBebida.EscolhaCafe.CARIOCA.getNome();
             break;
             case 3: 
-            cafeEscolhido = cafe.CAFEPRETO.getNome();
+            cafeEscolhido = TipoBebida.EscolhaCafe.CAFEPRETO.getNome();
             break;
 
         }        

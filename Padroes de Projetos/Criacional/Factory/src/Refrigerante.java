@@ -1,6 +1,6 @@
 public class Refrigerante implements Bebida {
 
-    private  TipoBebida.EscolhaRefrigerante refrigerante;
+
 
     @Override
     public String nome(String nome) {
@@ -14,10 +14,10 @@ public class Refrigerante implements Bebida {
         
         switch (escolha) {
             case 1:
-            refrigeranteEscolhido = refrigerante.PEPSI.getNome();
+            refrigeranteEscolhido = TipoBebida.EscolhaRefrigerante.PEPSI.getNome();
             break;
             case 2: 
-            refrigeranteEscolhido = refrigerante.COCA_COLA.getNome();
+            refrigeranteEscolhido = TipoBebida.EscolhaRefrigerante.COCA_COLA.getNome();
             break;
             
         }
