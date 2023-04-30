@@ -1,3 +1,3 @@
-public interface Bebida {
-    
+public  abstract interface Bebida {
+    public String nome();
 }

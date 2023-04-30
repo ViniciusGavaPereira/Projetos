@@ -1,5 +1,8 @@
-public class Refrigerante implements Bebida{
-    Refrigerante() {
-        System.out.println("Refrigerante");
+public class Refrigerante implements Bebida {
+
+    @Override
+    public String nome() {
+       return "Refrigerante";
     }
+    
 }

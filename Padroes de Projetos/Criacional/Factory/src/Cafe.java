@@ -1,6 +1,9 @@
-public class Cafe implements Bebida{
+public class Cafe implements Bebida {
 
-    Cafe(){
-        System.out.println("Café");
+   
+    @Override
+    public String nome() {
+       return "Cafe";
     }
+    
 }
