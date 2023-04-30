@@ -8,6 +8,6 @@ public class App {
         
         System.out.println(maquinaRefrigerante.novaBebida().escolha(1));
 
-        System.out.println(maquinaCafe.novaBebida().escolha(2));
+        System.out.println(maquinaCafe.novaBebida().escolha(4));
     }
 }

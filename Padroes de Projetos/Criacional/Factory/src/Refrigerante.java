@@ -19,6 +19,8 @@ public class Refrigerante implements Bebida {
             case 2: 
             refrigeranteEscolhido = TipoBebida.EscolhaRefrigerante.COCA_COLA.getNome();
             break;
+            default:
+            refrigeranteEscolhido = "Escolha inválida";
             
         }
         

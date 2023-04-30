@@ -21,6 +21,8 @@ public class Cafe implements Bebida {
             case 3: 
             cafeEscolhido = TipoBebida.EscolhaCafe.CAFEPRETO.getNome();
             break;
+            default: 
+            cafeEscolhido = "Escolha inválida";
 
         }        
 
