@@ -5,6 +5,6 @@ public class App {
         MaquinaRefrigerante maquinaRefrigerante = new MaquinaRefrigerante();
 
         
-        System.out.println(maquinaRefrigerante.novaBebida().nome());
+        System.out.println(maquinaRefrigerante.novaBebida().escolha(1));
     }
 }
