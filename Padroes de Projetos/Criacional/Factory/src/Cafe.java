@@ -1,17 +1,31 @@
 public class Cafe implements Bebida {
 
-   
+    private TipoBebida.EscolhaCafe cafe;
+
     @Override
     public String nome(String nome) {
        return nome;
     }
 
     @Override
-    public TipoBebida escolha(Integer escolha) {
+    public String escolha(Integer escolha) {
        
-        TipoBebida tipoCafe = new TipoBebida();
+        String cafeEscolhido = null;
 
-        return tipoCafe;
+        switch(escolha){
+            case 1: 
+            cafeEscolhido = cafe.MOCACCINO.getNome();
+            break;
+            case 2: 
+            cafeEscolhido = cafe.CARIOCA.getNome();
+            break;
+            case 3: 
+            cafeEscolhido = cafe.CAFEPRETO.getNome();
+            break;
+
+        }        
+
+        return cafeEscolhido;
     }
     
 }
