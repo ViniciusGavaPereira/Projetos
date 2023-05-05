@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-import java.util.Random;
+
 
 
 public class App {
@@ -42,7 +42,7 @@ public class App {
         
         while(hp > 0){
             hpComputador = 10 + i;
-
+            
             System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
             System.out.println("INIMIGO: " + i);
             System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
@@ -90,8 +90,7 @@ public class App {
         
                         case 2:  System.out.println("O inimigo te chutou");
                                 hp -= 3 + (int)(i/10);
-                                contagemEspecial--;
-                                System.out.println("Número de especiais: " + contagemEspecial);
+                               
                         break;
                         
                         case 3:  System.out.println("O inimigo te acertou com um golpe especial");
