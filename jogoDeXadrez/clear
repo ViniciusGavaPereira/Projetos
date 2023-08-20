@@ -1,0 +1,22 @@
+warning: in the working copy of 'src/application/Program.java', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/src/application/Program.java b/src/application/Program.java[m
+[1mindex 4fc78de..f374d07 100644[m
+[1m--- a/src/application/Program.java[m
+[1m+++ b/src/application/Program.java[m
+[36m@@ -1,12 +1,12 @@[m
+ package application;[m
+ [m
+[31m-import boardgame.Position;[m
+[31m-import boardgame.Board;[m
+[32m+[m[32mimport chess.ChessMatch;[m
+ [m
+ public class Program {[m
+     public static void main(String[] args) throws Exception {[m
+         [m
+[31m-        Board board = new Board(8,8);[m
+[31m-        System.out.println(board);[m
+[32m+[m[32m        ChessMatch chessMatch = new ChessMatch();[m
+[32m+[m
+[32m+[m[32m        UI.printBoard(chessMatch.getPieces());[m
+     }[m
+ }[m

@@ -13,6 +13,7 @@ import chess.Color;
 
 public class UI {
 
+
 	// https://stackoverflow.com/questions/5762491/how-to-print-color-in-console-using-system-out-println
 
 	public static final String ANSI_RESET = "\u001B[0m";
@@ -33,8 +34,8 @@ public class UI {
 	public static final String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
 	public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
+
 	
-	// https://stackoverflow.com/questions/2979383/java-clear-the-console
 	public static void clearScreen() {
 		System.out.print("\033[H\033[2J");
 		System.out.flush();
@@ -70,7 +71,7 @@ public class UI {
 		for (int i = 0; i < pieces.length; i++) {
 			System.out.print((8 - i) + " ");
 			for (int j = 0; j < pieces.length; j++) {
-				printPiece(pieces[i][j], false);
+			printPiece(pieces[i][j], false);
 			}
 			System.out.println();
 		}
@@ -86,7 +87,13 @@ public class UI {
 			System.out.println();
 		}
 		System.out.println("  a b c d e f g h");
+
+		
 	}
+
+
+
+	
 
 	private static void printPiece(ChessPiece piece, boolean background) {
 		if (background) {
@@ -105,6 +112,7 @@ public class UI {
         }
         System.out.print(" ");
 	}
+
 	
 	private static void printCapturedPieces(List<ChessPiece> captured) {
 		List<ChessPiece> white = captured.stream().filter(x -> x.getColor() == Color.WHITE).collect(Collectors.toList());
@@ -114,6 +122,7 @@ public class UI {
 		System.out.print(ANSI_WHITE);
 		System.out.println(Arrays.toString(white.toArray()));
 		System.out.print(ANSI_RESET);
+
 		System.out.print("Black: ");
 		System.out.print(ANSI_YELLOW);
 		System.out.println(Arrays.toString(black.toArray()));
